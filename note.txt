@@ -1,6 +1,0 @@
-Ubuntu:
-User: abdollahi_hossein
-Pass: CodeBoxx2023
----------------------------------------------------
-git push -u origin main --force
-
