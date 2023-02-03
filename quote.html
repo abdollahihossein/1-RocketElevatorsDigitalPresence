@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="/quote.css">
 
         <meta charset="utf-8" />
-		<title>Submission Form</title>
+		<title>Request Quote - Rocket Elevators</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
         
@@ -34,44 +34,8 @@
     </head>
 
     <body>
-        <!-- SLIDE TOP -->
-		<div id="slidetop">
-
-			<div class="container">
-				
-				<div class="row">
-
-					<div class="col-md-5">
-						<h6><i class="icon-heart"></i> WHY ROCKET ELEVATORS?</h6>
-						<p>We move 2 billion people a day and maintain more than 2 million customer units worldwide, the industry’s largest portfolio. We can be found in many of the world’s most recognizable buildings as well as the busiest transportation hubs and retail centers. </p>
-					</div>
-
-					<div class="col-md-4">
-						
-					</div>
-
-					<div class="col-md-3">
-						<h6><i class="icon-envelope"></i> CONTACT INFO</h6>
-						<ul class="list-unstyled">
-							<li><b>Address:</b> 4468 Wellington St Suite 204 <br /> Montreal, Quebec, Canada</li>
-							<li><b>Phone:</b> 1-800-887-2497</li>
-							<li><b>Email:</b> <a href="mailto:support@yourname.com">RocketElevators@RocketElevator.com</a></li>
-						</ul>
-					</div>
-
-				</div>
-
-			</div>
-
-			<a class="slidetop-toggle" href="#"><!-- toggle button --></a>
-
-		</div>
-		<!-- /SLIDE TOP -->
-
-
         <!-- wrapper -->
 		<div id="wrapper">
-
 
             <div id="header" class="navbar-toggleable-md sticky header-md clearfix">
 
@@ -145,95 +109,102 @@
                 <!-- /Top Nav -->
 
             </div>
-
-
+            
             <!-- Submission Form -->
             <section id="Form">
                 <div class="container">
+                    
+                    <h1 class="text-center mb-60">Request Quote</h1>
+                    <hr />
+                    <h3><strong>First, select the type of your building:</strong></h3>
 
-                    <form class="p-10">
-                        <div>
+                    <form>
+                        <div id="building_type">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="residential" value="option1">
-                                <label class="form-check-label" for="inlineRadio1">Residential</label>
+                                <input class="form-check-input" type="radio" name="building-type" id="residential">
+                                <label class="form-check-label" for="residential">Residential</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="commercial" value="option2">
-                                <label class="form-check-label" for="inlineRadio2">Commercial</label>
+                                <input class="form-check-input" type="radio" name="building-type" id="commercial">
+                                <label class="form-check-label" for="commercial">Commercial</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="industrial" value="option3">
-                                <label class="form-check-label" for="inlineRadio3">Industrial</label>
+                                <input class="form-check-input" type="radio" name="building-type" id="industrial">
+                                <label class="form-check-label" for="industrial">Industrial</label>
                             </div>
                         </div>
                     </form>
         
-                    <form class="p-10">
+                    <form>
                         <div id="residential-input" class="col-md-5">
                             <div>
-                                <label for="formGroupExampleInput" class="form-label">Enter the number of appartements in the building:</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="number of appartements" id="apartments-input">
+                                <label for="apartments-input" class="form-label">Enter the number of appartements in the building:</label>
+                                <input type="number" class="form-control" placeholder="number of appartements" id="apartments-input" value="">
                             </div>
                             <div>
-                                <label for="formGroupExampleInput2" class="form-label">Enter the number of floors contained in the building:</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="number of floors" id="floors-input-residential">
+                                <label for="floors-input-residential" class="form-label">Enter the number of floors contained in the building:</label>
+                                <input type="number" class="form-control" placeholder="number of floors" id="floors-input-residential" value="">
                             </div>
                         </div>
                     </form>
                     
-                    <form class="p-10">
+                    <form>
                         <div id="commercial-input" class="col-md-5">
                             <div>
-                                <label for="formGroupExampleInput" class="form-label">Enter the number of floors contained in the building:</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="number of floors" id="floors-input-commercial">
+                                <label for="floors-input-commercial" class="form-label">Enter the number of floors contained in the building:</label>
+                                <input type="number" class="form-control" placeholder="number of floors" id="floors-input-commercial" value="">
                             </div>
                             <div>
-                                <label for="formGroupExampleInput2" class="form-label">Enter the maximum occupancy per floor in the building:</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="maximum occupancy per floor" id="occupancy-input">
+                                <label for="occupancy-input" class="form-label">Enter the maximum occupancy per floor in the building:</label>
+                                <input type="number" class="form-control" placeholder="maximum occupancy per floor" id="occupancy-input" value="">
                             </div>
                         </div>
                     </form>
 
-                    <form class="p-10">
+                    <form>
                         <div id="industrial-input" class="col-md-5">
-                            <label for="formGroupExampleInput" class="form-label">Enter The number of elevators needed:</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="number of elevators needed" id="elevators-input">
+                            <label for="elevators-input" class="form-label">Enter The number of elevators needed:</label>
+                            <input type="number" class="form-control" placeholder="number of elevators needed" id="elevators-input" value="">
                         </div>
                     </form>
 
-                    <form class="p-10">
-                        <div>
+                    <h3><strong>Second, Select the product tier:</strong></h3>
+
+                    <form>
+                        <div id="sevice_type">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="standard" value="option1">
-                                <label class="form-check-label" for="inlineRadio1">Standard</label>
+                                <input class="form-check-input" type="radio" name="sevice-type" id="standard">
+                                <label class="form-check-label" for="standard">Standard</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="premium" value="option2">
-                                <label class="form-check-label" for="inlineRadio2">Premium</label>
+                                <input class="form-check-input" type="radio" name="sevice-type" id="premium">
+                                <label class="form-check-label" for="premium">Premium</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="excelium" value="option3">
-                                <label class="form-check-label" for="inlineRadio3">Excelium</label>
+                                <input class="form-check-input" type="radio" name="sevice-type" id="excelium">
+                                <label class="form-check-label" for="excelium">Excelium</label>
                             </div>
                         </div>
                     </form>
+
+                    <h3><strong>Summary:</strong></h3>
         
-                    <form class="p-10">
+                    <form>
                         <div>
                             <div class="col-md-5">
-                                <label for="formGroupExampleInput" class="form-label">The number of elevators needed:</label>
-                                <input type="text" class="form-control" id="elevators-output" value="" readonly="">
+                                <label for="elevators-output" class="form-label">Amount of Elevators:</label>
+                                <input type="number" class="form-control" id="elevators-output" value="" readonly="">
                             </div>
                             <div class="col-md-5">
-                                <label for="formGroupExampleInput2" class="form-label">The unit price of each elevator:</label>
+                                <label for="unit-price" class="form-label">Price of Each Elevator:</label>
                                 <input type="text" class="form-control" id="unit-price" value="" readonly="">
                             </div>
                             <div class="col-md-5">
-                                <label for="formGroupExampleInput" class="form-label">The Installation fees:</label>
+                                <label for="fees" class="form-label">Installation Fees:</label>
                                 <input type="text" class="form-control" id="fees" value="" readonly="">
                             </div>
                             <div class="col-md-5">
-                                <label for="formGroupExampleInput2" class="form-label">The final cost estimate:</label>
+                                <label for="final-cost" class="form-label">Total Cost:</label>
                                 <input type="text" class="form-control" id="final-cost" value="" readonly="">
                             </div>
                         </div>
@@ -243,7 +214,7 @@
             </section>
             <!-- /Submission Form -->
 
-            
+
 
             <!-- FOOTER -->
             <footer id="footer">
