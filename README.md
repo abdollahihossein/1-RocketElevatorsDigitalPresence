@@ -1,2 +1,2 @@
 # RocketElevatorsDigitalPresence
-This is my project for the first 2 weeks of Codeboxx!
+This is the project for the first 2 weeks in Codeboxx.
