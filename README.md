@@ -63,6 +63,12 @@ There are a few Git commands that you’ll be using just about everyday:
 
 git status
 
+Stages all changes:
+
+git add --all   or    git add -A
+
+stages new files and modifications, without deletions:
+
 git add .
 
 git commit -m "your message"
@@ -78,19 +84,26 @@ sometimes "git push" doesn't work for the first time, in that case use this:
 git push -u origin main --force
 
 ----------------------------------------------------------------------------------------
-This will merge BRANCH_NAME into the current branch locally:
+Create a new branch:
 
-git merge BRANCH_NAME
+git branch BRANCH_NAME
 
 List all local branches:
 
 git branch
 
-To move between branches:
+Move between branches:
 
-git checkout (branch name)
+git checkout BRANCH_NAME
 
-to creat a new branch:
+Creat a new branch and move to that branch:
 
-git checkout -b (branch name)
+git checkout -b BRANCH_NAME
 
+Merge BRANCH_NAME into the current branch locally:
+
+git merge BRANCH_NAME
+
+Delete a branch:
+
+git branch -d BRANCH_NAME
